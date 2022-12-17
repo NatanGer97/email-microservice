@@ -1,0 +1,12 @@
+version: "3"
+services:
+  appserver:
+    container_name: microservice-email
+    hostname: localhost
+    image: natanger97/email-ms:001
+#    image: email-microservice
+
+    ports:
+      - "8081:8081"
+    privileged: true
+
